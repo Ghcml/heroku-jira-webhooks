@@ -19,7 +19,7 @@ heroku config:set GITHUB_ORG=mercadolibre GITHUB_TOKEN=a77a7a7a7a77a7a7a7a JIRA_
 ```
 5. Create a Jira Webhook
 ```bash
-url = url copied before
+url = url copied before + /jira/webhooks/issues/${issue.key} (For example: https://super-app.herokuapp.com/jira/webhooks/issues/${issue.key})
 issue related event = issue.update
 JQL Filter: project = yourProjectKey (For example: project = ODN)
 ```
